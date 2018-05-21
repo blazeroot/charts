@@ -76,7 +76,7 @@ spec:
 {{ include "keycloak.externalDbConfig" . | indent 12 }}
           {{- end }}
 {{- with .Values.keycloak.extraEnv }}
-{{ toYaml . | indent 12 }}
+{{ toYaml . | indent 14 }}
 {{- end }}
           volumeMounts:
             - name: scripts
